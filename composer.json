@@ -1,0 +1,28 @@
+{
+    "name": "vaalyn/dtg-calculator-plugin",
+    "description": "A direct-to-garment price calculator plugin for my slim3 framework plugin loader",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Vaalyn",
+            "email": "vaalyndev@gmail.com"
+        }
+    ],
+    "require": {
+		"vaalyn/dtg-price-calculator": "dev-master",
+        "respect/validation": "^1.1",
+        "moneyphp/money": "^3.1"
+	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "git@github.com:Vaalyn/DTG-Price-Calculator.git"
+		}
+	],
+	"autoload": {
+        "psr-4": {
+			"Plugin\\DtgCalculator\\": "src"
+        }
+    }
+}
