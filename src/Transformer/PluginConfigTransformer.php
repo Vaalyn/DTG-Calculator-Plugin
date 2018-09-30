@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace Plugin\DtgCalculator\Transformer;
 
-use CashewCRM\Service\Plugin\PluginConfigTransformerInterface;
 use Plugin\DtgCalculator\Constants\PluginConfigConstants;
 use Vaalyn\DtgPriceCalculator\Config\LabourConfig;
 use Vaalyn\DtgPriceCalculator\Config\ProfitConfig;
@@ -14,6 +13,7 @@ use Vaalyn\DtgPriceCalculator\Config\ProfitConfigInterface;
 use Vaalyn\DtgPriceCalculator\Config\PreTreatmentTankConfig;
 use Vaalyn\DtgPriceCalculator\Config\InkCartridgeConfigInterface;
 use Vaalyn\DtgPriceCalculator\Config\PreTreatmentTankConfigInterface;
+use Vaalyn\PluginService\PluginConfigTransformerInterface;
 
 class PluginConfigTransformer implements PluginConfigTransformerInterface {
 	/**

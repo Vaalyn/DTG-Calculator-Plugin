@@ -4,13 +4,13 @@ declare(strict_types = 1);
 
 namespace Plugin\DtgCalculator;
 
-use CashewCRM\Service\Plugin\AbstractPlugin;
 use Plugin\DtgCalculator\Routes\Api;
 use Plugin\DtgCalculator\Routes\Frontend;
 use Plugin\DtgCalculator\Transformer\PluginConfigTransformer;
 use Plugin\DtgCalculator\Validator\PluginConfigValidator;
 use Psr\Container\ContainerInterface;
 use Slim\App;
+use Vaalyn\PluginService\AbstractPlugin;
 
 class DtgCalculatorPlugin extends AbstractPlugin {
 	protected const PLUGIN_NAME = 'dtg-calculator-plugin';

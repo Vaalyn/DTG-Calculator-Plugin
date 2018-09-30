@@ -5,7 +5,6 @@ declare(strict_types = 1);
 namespace Plugin\DtgCalculator\Routes\Api;
 
 use NumberFormatter;
-use CashewCRM\Exception\InfoException;
 use Money\Formatter\IntlMoneyFormatter;
 use Money\Formatter\DecimalMoneyFormatter;
 use Money\Money;
@@ -25,6 +24,7 @@ use Vaalyn\DtgPriceCalculator\Config\PreTreatmentTankConfigInterface;
 use Vaalyn\DtgPriceCalculator\Config\ProfitConfigInterface;
 use Vaalyn\DtgPriceCalculator\DtgPriceInterface;
 use Vaalyn\DtgPriceCalculator\DtgPriceCalculator;
+use Vaalyn\PluginService\Exception\InfoException;
 
 class DtgCalculatorController {
 	protected const GARMENT_PRICE_PARAMETER = 'garment_price';
