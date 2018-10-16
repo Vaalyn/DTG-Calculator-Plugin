@@ -4,11 +4,11 @@ declare(strict_types = 1);
 
 namespace Plugin\DtgCalculator\Routes\Frontend;
 
-use CashewCRM\Service\Authentication\Authentication;
 use Psr\Container\ContainerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
 use Slim\Views\PhpRenderer;
+use Vaalyn\AuthenticationService\Authentication;
 
 class DtgCalculatorController {
 	/**
